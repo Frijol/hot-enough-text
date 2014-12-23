@@ -4,9 +4,8 @@ var temperature = 212;
 var message = 'Temperature ' + temperature + 'ºF reached.';
 
 // Require node modules
+console.log('Setting up Twilio...');
 var twilio = require('twilio')(config.account_sid, config.auth_token);
-
-sendText();
 
 function sendText() {
   console.log('Sending text...');
