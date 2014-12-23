@@ -3,9 +3,28 @@ var config = require('./config.json');
 var temperature = 212;
 var message = 'Temperature ' + temperature + 'ºF reached.';
 
+// Set up hardware
+var tessel = require('tessel');
+var thermocouplelib = require('thermocouple-max31855');
+var sensor = thermocouplelib.use(tessel.port['GPIO'], {
+  cs: 0,
+  poll: 10
+});
+
 // Require node modules
 console.log('Setting up Twilio...');
 var twilio = require('twilio')(config.account_sid, config.auth_token);
+
+// Check the temperature
+sensor.on('measurement', function (data) {
+  console.log(data);
+  if (data >= temperature) {
+    // Send the text
+    sendText();
+    // Stop listening
+    process.exit();
+  }
+});
 
 function sendText() {
   console.log('Sending text...');
