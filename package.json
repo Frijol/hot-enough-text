@@ -1,0 +1,33 @@
+{
+  "name": "hot-enough-text",
+  "version": "1.0.0",
+  "description": "Uses Tessel + Twilio to send a text notification when something is hot enough.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Frijol/hot-enough-text.git"
+  },
+  "keywords": [
+    "tessel",
+    "twilio",
+    "thermocouple",
+    "hot",
+    "water",
+    "boiling",
+    "grill",
+    "barbecue"
+  ],
+  "author": "Kelsey Breseman",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/Frijol/hot-enough-text/issues"
+  },
+  "homepage": "https://github.com/Frijol/hot-enough-text",
+  "dependencies": {
+    "thermocouple-max31855": "^1.0.1",
+    "twilio": "^1.10.0"
+  }
+}
