@@ -40,3 +40,4 @@ I use a thermocouple (not Tessel's climate module) because a thermocouple is ver
 1. In `index.js`, set your temperature threshold
 1. [Connect Tessel to the internet](http://start.tessel.io/wifi)
 1. Run the code on Tessel: `tessel run index.js`
+1. If you want to run the code disconnected from your computer, run `tessel push index.js` to push the code into Tessel's memory, then use an [alternate power source](https://tessel.io/docs/untethered). Just remember to make sure Tessel's connected to the internet, or it won't be able to send the text.
