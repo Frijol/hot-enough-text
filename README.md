@@ -25,6 +25,8 @@ I use a thermocouple (not Tessel's climate module) because a thermocouple is ver
   * DO > MISO (this is data from the thermocouple coming in to Tessel)
   * CS > TX/G1 (chip select– we're using a digital GPIO pin to tell the amplifier when we're talking to it)
   * CLK > SCK (different names for the clock pin)
+  ![](https://lh6.googleusercontent.com/-rouT78pE2_U/VKG0f_RF3QI/AAAAAAAALpQ/B_sAqWNMatE/w926-h521-no/20141229_110637.jpg)
+  ![](https://lh4.googleusercontent.com/-2mD7RGs3eyU/VKG0eyNzfbI/AAAAAAAALpE/_NUo1dzSxsE/w926-h521-no/20141229_110617.jpg)
 1. Put the end of the thermocouple in the thing you're heating up.
 
 ## Software setup
