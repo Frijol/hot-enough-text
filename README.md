@@ -22,7 +22,7 @@ I use a thermocouple (not Tessel's climate module) because a thermocouple is ver
   * Vin > 3.3V (power)
   * 3Vo > nothing, we don't need this one
   * GND > GND (ground)
-  * DO > MOSI (this is data from the thermocouple coming in to Tessel)
+  * DO > MISO (this is data from the thermocouple coming in to Tessel)
   * CS > TX/G1 (chip select– we're using a digital GPIO pin to tell the amplifier when we're talking to it)
   * CLK > SCK (different names for the clock pin)
 1. Put the end of the thermocouple in the thing you're heating up.
